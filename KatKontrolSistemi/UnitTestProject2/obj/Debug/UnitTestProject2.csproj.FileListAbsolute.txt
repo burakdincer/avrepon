@@ -1,0 +1,5 @@
+C:\Users\Bgr\Desktop\KatKontrolSistemi\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+C:\Users\Bgr\Desktop\KatKontrolSistemi\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+C:\Users\Bgr\Desktop\KatKontrolSistemi\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+C:\Users\Bgr\Desktop\KatKontrolSistemi\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+C:\Users\Bgr\Desktop\KatKontrolSistemi\UnitTestProject2\obj\Debug\UnitTestProject2.pdb

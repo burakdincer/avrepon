@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60077A1C-AD14-4EB7-815D-ED6418742391}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KatKontrolSistemi</RootNamespace>
+    <AssemblyName>KatKontrolSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\MySql.Data_\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltinciKat\AltinciKatDb.cs" />
+    <Compile Include="AltinciKat\frmAltinciKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltinciKat\frmAltinciKat.Designer.cs">
+      <DependentUpon>frmAltinciKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BesinciKat\BesinciKatDb.cs" />
+    <Compile Include="BesinciKat\frmBesinciKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BesinciKat\frmBesinciKat.Designer.cs">
+      <DependentUpon>frmBesinciKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirinciKat\BirinciKatDb.cs" />
+    <Compile Include="BirinciKat\frmBirinciKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirinciKat\frmBirinciKat.Designer.cs">
+      <DependentUpon>frmBirinciKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolumIslemleri\BolumDb.cs" />
+    <Compile Include="BolumIslemleri\frmBolumListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolumIslemleri\frmBolumListesi.Designer.cs">
+      <DependentUpon>frmBolumListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dosyalar\Ekranlar.cs" />
+    <Compile Include="Dosyalar\Mesajlar.cs" />
+    <Compile Include="Dosyalar\VeriTabani.cs" />
+    <Compile Include="DördüncüKat\DördüncüKatDb.cs" />
+    <Compile Include="DördüncüKat\frmDördüncüKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DördüncüKat\frmDördüncüKat.Designer.cs">
+      <DependentUpon>frmDördüncüKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekstralar\EkstralarDb.cs" />
+    <Compile Include="Ekstralar\frmPersonelKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekstralar\frmPersonelKarti.Designer.cs">
+      <DependentUpon>frmPersonelKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekstralar\frmSinifGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekstralar\frmSinifGuncelleme.Designer.cs">
+      <DependentUpon>frmSinifGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaMenu.Designer.cs">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IkinciKat\frmIkinciKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IkinciKat\frmIkinciKat.Designer.cs">
+      <DependentUpon>frmIkinciKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IkinciKat\IkinciKatDb.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcüncüKat\frmUcüncüKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcüncüKat\frmUcüncüKat.Designer.cs">
+      <DependentUpon>frmUcüncüKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcüncüKat\UcüncüKatDb.cs" />
+    <Compile Include="YedinciKat\frmYedinciKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YedinciKat\frmYedinciKat.Designer.cs">
+      <DependentUpon>frmYedinciKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YedinciKat\YedinciKatDb.cs" />
+    <EmbeddedResource Include="AltinciKat\frmAltinciKat.resx">
+      <DependentUpon>frmAltinciKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BesinciKat\frmBesinciKat.resx">
+      <DependentUpon>frmBesinciKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirinciKat\frmBirinciKat.resx">
+      <DependentUpon>frmBirinciKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolumIslemleri\frmBolumListesi.resx">
+      <DependentUpon>frmBolumListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DördüncüKat\frmDördüncüKat.resx">
+      <DependentUpon>frmDördüncüKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekstralar\frmPersonelKarti.resx">
+      <DependentUpon>frmPersonelKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekstralar\frmSinifGuncelleme.resx">
+      <DependentUpon>frmSinifGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaMenu.resx">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IkinciKat\frmIkinciKat.resx">
+      <DependentUpon>frmIkinciKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UcüncüKat\frmUcüncüKat.resx">
+      <DependentUpon>frmUcüncüKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YedinciKat\frmYedinciKat.resx">
+      <DependentUpon>frmYedinciKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bodrum\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
